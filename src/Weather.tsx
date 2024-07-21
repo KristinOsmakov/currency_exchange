@@ -7,7 +7,7 @@ type Props = {
 export const Weather = (props: Props) => {
     return (
         <div>
-
+            Weather
         </div>
     );
 };

@@ -1,11 +1,14 @@
+body {
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: black;
+  user-select: none;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

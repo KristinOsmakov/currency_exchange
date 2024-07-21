@@ -2,13 +2,16 @@
 import * as React from 'react';
 import s from '../src/styles.module.css'
 
-type Props = {
-
+type TitleType = 'USD' | 'EUR' | 'RUB' | 'BEL'
+type UniversalInputPropsType = {
+    title: TitleType,
+    image: string,
 };
-export const UniversalInput = (props: Props) => {
+export const UniversalInput = ({title, image}: UniversalInputPropsType) => {
     return (
         <div>
-            <input className={s.input}/>
+            <img className={s.img} src={image} alt={title}/>
+            <input type={"number"} className={s.input}/>
         </div>
     );
 };

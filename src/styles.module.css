@@ -1,5 +1,45 @@
+/*text*/
+.currency {
+    color: green;
+    font-size: 10vh;
+}
+
+
+/*button*/
+.currencyContainerButton {
+    margin: 5vh 0;
+
+}
+.button {
+    width: 30vh;
+    height: 8vh;
+    font-size: 4vh;
+    font-weight: bold;
+    border-radius: 50vh;
+    cursor: pointer;
+    background-color: green;
+    color: black;
+    border: none;
+    margin: 0 2vh;
+}
+
+/*input*/
 .input {
-    width: 150px;
-    height: 30px;
-    border-radius: 40px;
+    padding: 0 5vh;
+    width: 90vh;
+    height: 15vh;
+    border-radius: 50vh;
+    font-size: 10vh;
+    margin: 2vh 0;
+
+}
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+/*image*/
+.img {
+    width: 5vh;
+    height: 5vh;
+    
 }
