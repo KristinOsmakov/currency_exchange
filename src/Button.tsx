@@ -8,10 +8,11 @@ type TitleType = 'USD' | 'EUR' | 'RUB'
 type ButtonPropsType = {
     title: TitleType,
     image: string,
+    fun: () => void
 };
-export const Button = ({title, image}: ButtonPropsType) => {
+export const Button = ({title, image, fun}: ButtonPropsType) => {
     return (
-        <button className={s.button}>
+        <button className={s.button} onClick={fun}>
             <img className={s.img} src={image} alt={title}/>
             {title}
         </button>

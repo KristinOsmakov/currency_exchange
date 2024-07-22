@@ -7,10 +7,9 @@ import imgRUS from '../src/images/rus.webp'
 import imgEUR from '../src/images/europe.webp'
 import imgUSD from '../src/images/USA.webp'
 
-type Props = {
-
+type ContainerInputPropsType = {
 };
-export const ContainerInput = (props: Props) => {
+export const ContainerInput = (props: ContainerInputPropsType) => {
     return (
         <div>
             <UniversalInput image={imgUSD} title={'USD'}/>

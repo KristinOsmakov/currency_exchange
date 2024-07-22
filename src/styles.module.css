@@ -33,6 +33,7 @@
     margin: 2vh 0;
 
 }
+
 .input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     -moz-appearance: textfield;
@@ -41,5 +42,9 @@
 .img {
     width: 5vh;
     height: 5vh;
-    
+    display: inline-block;
+}
+.eeex {
+    display: inline-block;
+
 }
