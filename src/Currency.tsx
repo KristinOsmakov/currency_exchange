@@ -1,6 +1,6 @@
 // @flow 
 import * as React from 'react';
-import {UniversalInput} from "./universalInput";
+import {UniversalInput} from "./UniversalInput";
 import s from '../src/styles.module.css'
 import {Button} from "./Button";
 import {CurrencyContainerButton} from "./CurrencyContainerButton";

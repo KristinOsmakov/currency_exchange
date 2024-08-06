@@ -4,9 +4,9 @@ import s from '../src/styles.module.css'
 
 
 
-type TitleType = 'USD' | 'EUR' | 'RUB'
+// type TitleType = 'USD' | 'EUR' | 'RUB'
 type ButtonPropsType = {
-    title: TitleType,
+    title: string,
     image: string,
     fun: () => void
 };
