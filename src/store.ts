@@ -7,6 +7,7 @@ import {
 import {AnyAction, applyMiddleware, combineReducers, legacy_createStore} from 'redux'
 import thunkMiddleware, {ThunkDispatch, thunk} from 'redux-thunk'
 import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
+import {inputReducer} from "./reducers/inputReducer";
 
 
 
@@ -16,8 +17,7 @@ const rootReducer = combineReducers({
     USD: usdRateReducer,
     EUR: eurRateReducer,
     RUB: rubRateReducer,
-
-
+    inputRed: inputReducer
 })
 
 export const store = legacy_createStore(rootReducer, {}, applyMiddleware(thunk))

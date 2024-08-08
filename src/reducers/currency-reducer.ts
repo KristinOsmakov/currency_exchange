@@ -35,6 +35,7 @@ export const rubRateReducer = (state: number | null = null, action: ActionT): nu
     }
 }
 
+
 export const getCurrencyAC = (currencyData: CurrencyType[]) => (
     {
         type: 'GET-CURRENCY',

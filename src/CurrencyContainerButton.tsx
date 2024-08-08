@@ -6,16 +6,21 @@ import imgBEL from '../src/images/belarus.webp'
 import imgRUS from '../src/images/rus.webp'
 import imgEUR from '../src/images/europe.webp'
 import imgUSD from '../src/images/USA.webp'
+import {useState} from "react";
+import {useAppDispatch} from "./store";
+import {getInputAC} from "./reducers/inputReducer";
 
 
 
-type CurrencyContainerButtonPropsType = {};
 
-export const CurrencyContainerButton = (props: CurrencyContainerButtonPropsType) => {
+export const CurrencyContainerButton = () => {
+    const dispatch = useAppDispatch()
 
-    const fuu = () => {
-        alert('hi')
+
+    const fuu = (title: string) => {
+        dispatch(getInputAC(title))
     }
+
 
     return (
         <div className={s.currencyContainerButton}>
