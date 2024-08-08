@@ -1,4 +1,9 @@
-import {currencyReducer} from "./reducers/currency-reducer";
+import {
+    currencyReducer,
+    eurRateReducer,
+    rubRateReducer,
+    usdRateReducer
+} from "./reducers/currency-reducer";
 import {AnyAction, applyMiddleware, combineReducers, legacy_createStore} from 'redux'
 import thunkMiddleware, {ThunkDispatch, thunk} from 'redux-thunk'
 import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
@@ -7,7 +12,12 @@ import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
 
 
 const rootReducer = combineReducers({
-    currency: currencyReducer
+    currency: currencyReducer,
+    USD: usdRateReducer,
+    EUR: eurRateReducer,
+    RUB: rubRateReducer,
+
+
 })
 
 export const store = legacy_createStore(rootReducer, {}, applyMiddleware(thunk))

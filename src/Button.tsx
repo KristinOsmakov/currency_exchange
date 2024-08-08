@@ -3,8 +3,6 @@ import * as React from 'react';
 import s from '../src/styles.module.css'
 
 
-
-// type TitleType = 'USD' | 'EUR' | 'RUB'
 type ButtonPropsType = {
     title: string,
     image: string,

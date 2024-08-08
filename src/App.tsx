@@ -9,11 +9,11 @@ import {getCurrencyTC} from "./reducers/currency-reducer";
 function App() {
 
     const dispatch = useAppDispatch()
+
     useEffect(() => {
         const thunk = getCurrencyTC()
         dispatch(thunk)
     }, []);
-
 
   return (
     <div className="App">

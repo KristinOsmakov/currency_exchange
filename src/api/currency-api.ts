@@ -1,5 +1,5 @@
 import axios from "axios";
-import {CurrencyId} from "../Currency";
+
 
 const instance = axios.create( {
     baseURL: 'https://api.nbrb.by/exrates/rates?periodicity=0',

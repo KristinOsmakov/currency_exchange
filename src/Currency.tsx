@@ -11,11 +11,6 @@ type CurrencyPropsType = {
     
 };
 
-export enum CurrencyId {
-    USD = 431,
-    EUR = 451,
-    RUB = 456,
-}
 export const Currency = (props: CurrencyPropsType) => {
     return (
         <div className={s.currency}>
